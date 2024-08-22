@@ -1,0 +1,36 @@
+
+     Principe :
+     crediter =deposer
+     debiter=prélever
+
+     Dans un compte, il est possible de déposer une somme d'argent et de la retirer selon les besoins financiers.
+     Cependant, les comptes rémunérés sont soumis à un plafond de versement.
+     La personne ne peut pas déposer de l'argent à sa guise, mais doit être consciente de ce plafond et ne pas le dépasser.
+     Par exemple,si le plafond est fixé à 10 000 euros, elle ne peut pas verser davantage,
+     mais les intérêts générés peuvent dépasser cette limite, ce qui ne pose aucun problème.
+
+     important:
+     loi1:acces aux attribut Private
+     dans une classe fille meme si la fille a heriter des attributs de la classe mere
+      mais quils sont private elle doit tjr utiliser les getter pour avoir acce
+      et dans le main une classe a acce a ses attribut uniquementen utilisans les
+      methodes de la classe exemple cptrR_objet.plafond=interdit,cptrR_objet.getplafond oui valider
+
+
+      /************************************************************************************/
+      loi2:concernont les attribut et les methodes dela classe mere alors
+       les classes filles peuvent avoir acce le plus  posssible mais si c'est private tjr utiliser un set ou un get
+       la notion de get s'applique partout c'esta dire
+        si un element est private tjr faire un getter pour qu'on puisse avoir acces
+/**gpt*/
+Il semble que vous ayez formulé quelques remarques importantes concernant les principes de l'héritage et de l'accès aux attributs privés dans la programmation orientée objet. Voici un résumé de ces points clés :
+
+Accès aux attributs privés : Lorsqu'un attribut est déclaré comme private, il n'est pas directement accessible depuis l'extérieur de la classe. Pour accéder à ces attributs privés, vous devez utiliser des méthodes publiques, telles que des getters et des setters.
+
+Héritage et accès aux attributs : Lorsqu'une classe fille hérite d'une classe mère, elle peut accéder aux attributs de la classe mère, même s'ils sont privés. Cependant, la classe fille devra également utiliser des getters et des setters pour accéder et modifier ces attributs privés de la classe mère.
+
+Loi 1 : Une classe fille peut hériter des attributs de la classe mère, mais si ces attributs sont privés, la classe fille doit toujours utiliser des getters et des setters pour y accéder. Dans le main, une classe peut accéder à ses attributs uniquement en utilisant les méthodes de la classe (par exemple, cptrR_objet.getPlafond()).
+
+Loi 2 : En ce qui concerne les attributs et les méthodes de la classe mère, les classes filles peuvent y accéder autant que possible. Cependant, si un attribut est privé, il est recommandé de fournir un getter pour permettre un accès contrôlé. La notion de getters s'applique partout, ce qui signifie que, même dans une classe fille, il est préférable d'utiliser des getters pour accéder aux attributs privés de la classe mère.
+
+Ces observations sont correctes et décrivent des principes fondamentaux de l'encapsulation et de l'héritage en programmation orientée objet. Respecter ces principes contribue à rendre votre code plus robuste, maintenable et évite l'exposition non contrôlée de données internes.
